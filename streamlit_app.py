@@ -11,7 +11,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 @st.cache_data
 def load_job_data():
     # ✅ 正しいパス（GitHub上の構成と一致）
-    return pd.read_excel("data/全体案件.xlsx", sheet_name="Sheet1")
+    return pd.read_excel("全体案件.xlsx", sheet_name="Sheet1")
 
 df_jobs = load_job_data()
 
