@@ -13,7 +13,7 @@ model_option = st.selectbox("使用するモデルを選んでください", ["g
 # Excel読み込み関数
 @st.cache_data
 def load_job_data():
-    return pd.read_excel("zentai_anken.xlsx", sheet_name="Sheet1")
+    return pd.read_excel("全体案件.xlsx", sheet_name="Sheet1")
 
 df_jobs = load_job_data()
 
